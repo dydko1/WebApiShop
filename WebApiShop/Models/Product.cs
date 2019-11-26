@@ -10,10 +10,11 @@ namespace WebApiShop.Models
     {
         [Key]
         public int Id { get; set; }
-        //[Required]
-        [MaxLength(100), MinLength(5)]
+        [Required]
+        [MaxLength(), MinLength(5)]
         public String Name { get; set; }
         //public String Desription { get; set; }
+        [Required]
         public decimal Price { get; set; }
         //public virtual Category Category { get; set; }
         //public ICollection<Review> Reviews {get;set;}

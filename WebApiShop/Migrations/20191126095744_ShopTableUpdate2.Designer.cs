@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApiShop.Models;
 
 namespace WebApiShop.Migrations
 {
     [DbContext(typeof(WebApiShopContext))]
-    partial class WebApiShopContextModelSnapshot : ModelSnapshot
+    [Migration("20191126095744_ShopTableUpdate2")]
+    partial class ShopTableUpdate2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
